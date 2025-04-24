@@ -1,11 +1,10 @@
 //importing the Appointment model
 const Appointment = require("../models/Appointment");
-const managerAppointment = require("../services/managerAppointment");
-
+const appointmentsManager = require("../manager/appointmentManager");
 const createAppointment = async (req, res) => {
   try {
-    //used managerAppointment to create a new appointment using the data from the request body
-    const appointment = await managerAppointment.createAppointment(req.body);
+    //used appointmentsManager to create a new appointment using the data from the request body
+    const appointment = await appointmentsManager.createAppointment(req.body);
     res.status(201).json({
       message: "Appointment created successfully",
       appointment,
@@ -20,8 +19,8 @@ const createAppointment = async (req, res) => {
 const updateAppointment = async (req, res) => {
   const { id } = req.params;
   try {
-    //used managerAppointment to update an appointment
-    const updated = await managerAppointment.updateAppointmentDetails(
+    //used appointmentsManager to update an appointment
+    const updated = await appointmentsManager.updateAppointmentDetails(
       id,
       req.body
     );

@@ -1,12 +1,12 @@
 //imported Client model
 const Client = require("../models/Client");
-const managerClients = require("../services/managerClients");
+const clientsManager = require("../manager/clientManager");
 
 //handles the process of adding a new client and associating their cars
 const addClient = async (req, res) => {
   try {
-    //used managerClients to add cars to client
-    await managerClients.addClientWithCars(req.body);
+    //used clientsManager to add cars to client
+    await clientsManager.addClientWithCars(req.body);
     res.status(201).json({ message: "Client was successfully created" });
   } catch (error) {
     const status = error.statusCode || 500;
@@ -21,8 +21,8 @@ const updateClient = async (req, res) => {
   const { id } = req.params;
 
   try {
-    //used managerClients to update clients details
-    const updatedClient = await managerClients.updateClientDetails(
+    //used clientsManager to update clients details
+    const updatedClient = await clientsManager.updateClientDetails(
       id,
       req.body
     );
@@ -45,8 +45,8 @@ const addCarsToClient = async (req, res) => {
   const { cars } = req.body;
 
   try {
-    //used managerClients to add cars to an existing client based on their id
-    const client = await managerClients.addCarsToClientById(id, cars);
+    //used clientsManager to add cars to an existing client based on their id
+    const client = await clientsManager.addCarsToClientById(id, cars);
     res.status(200).json({
       message: "Successfully added cars to client",
       client,
@@ -65,8 +65,8 @@ const disableClientStatus = async (req, res) => {
   const { isActive } = req.body;
 
   try {
-    //used managerClients to update client status
-    const client = await managerClients.updateClientStatusById(id, isActive);
+    //used clientsManager to update client status
+    const client = await clientsManager.updateClientStatusById(id, isActive);
     res.status(200).json({
       message: `Client ${
         client.isActive ? "activated" : "deactivated"
