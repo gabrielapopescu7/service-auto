@@ -1,0 +1,1017 @@
+{
+	"info": {
+		"_postman_id": "54a2395e-9b8c-40a4-a16f-2fd040352cd8",
+		"name": "ServiceAuto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42424951"
+	},
+	"item": [
+		{
+			"name": "Add Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Andreea\",\r\n  \"lastName\": \"Popescu\",\r\n  \"phoneNumber\": [\"0731234777\"],\r\n  \"email\": \"andreea.popescu@gmail.com\",\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B124ZZZ\",\r\n      \"chassisNumber\": \"AZC1234567991SYZ1\",\r\n      \"brand\": \"Volkswagen\",\r\n      \"model\": \"Golf\",\r\n      \"year\": 2019,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1968,\r\n      \"horsepower\": 150\r\n    },\r\n    {\r\n      \"licensePlate\": \"AG97POP\",\r\n      \"chassisNumber\": \"PZP4667890123ABC2\",\r\n      \"brand\": \"BMW\",\r\n      \"model\": \"320i\",\r\n      \"year\": 2020,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1998,\r\n      \"horsepower\": 184\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/add-client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Andreea\",\r\n  \"lastName\": \"Popescu\",\r\n  \"phoneNumber\": [\"0731234777\"],\r\n  \"email\": \"andreea.popescu@gmail.com\",\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B124ZZZ\",\r\n      \"chassisNumber\": \"AZC1234567991SYZ1\",\r\n      \"brand\": \"Volkswagen\",\r\n      \"model\": \"Golf\",\r\n      \"year\": 2019,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1968,\r\n      \"horsepower\": 150\r\n    },\r\n    {\r\n      \"licensePlate\": \"AG97POP\",\r\n      \"chassisNumber\": \"PZP4667890123ABC2\",\r\n      \"brand\": \"BMW\",\r\n      \"model\": \"320i\",\r\n      \"year\": 2020,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1998,\r\n      \"horsepower\": 184\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/add-client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add-client"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d-OGpDzFKxD4EGq5U9YyhZ4QX7H5c\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:12:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Client was successfully created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Ana\",\r\n  \"lastName\": \"Ionescu\",\r\n  \"phoneNumber\": [\"0731234777\"],\r\n  \"email\": \"ana.ionescu@gmail.com\",\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B100AZZ\",\r\n      \"chassisNumber\": \"ACC1234567991SYZ1\",\r\n      \"brand\": \"DACIA\",\r\n      \"model\": \"Duster\",\r\n      \"year\": 2023,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1968,\r\n      \"horsepower\": 150\r\n    },\r\n    {\r\n      \"licensePlate\": \"AG97AOP\",\r\n      \"chassisNumber\": \"PZP9067890123ABC2\",\r\n      \"brand\": \"BMW\",\r\n      \"model\": \"X5\",\r\n      \"year\": 2020,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1998,\r\n      \"horsepower\": 184\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/add-client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Ana\",\r\n  \"lastName\": \"Ionescu\",\r\n  \"phoneNumber\": [\"0731234777\"],\r\n  \"email\": \"ana.ionescu@gmail.com\",\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B100AZZ\",\r\n      \"chassisNumber\": \"ACC1234567991SYZ1\",\r\n      \"brand\": \"DACIA\",\r\n      \"model\": \"Duster\",\r\n      \"year\": 2023,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1968,\r\n      \"horsepower\": 150\r\n    },\r\n    {\r\n      \"licensePlate\": \"AG97AOP\",\r\n      \"chassisNumber\": \"PZP9067890123ABC2\",\r\n      \"brand\": \"BMW\",\r\n      \"model\": \"X5\",\r\n      \"year\": 2020,\r\n      \"engineType\": \"hybrid\",\r\n      \"engineCapacity\": 1998,\r\n      \"horsepower\": 184\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/add-client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add-client"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d-OGpDzFKxD4EGq5U9YyhZ4QX7H5c\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:14:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Client was successfully created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Clients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6556"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"199c-gr+sSN5rTiGAbWfMrlh0/RPMRdY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:14:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"isActive\": true,\n        \"_id\": \"6800eb7b890a8ea37a4169f3\",\n        \"firstName\": \"Mihai\",\n        \"lastName\": \"Ionescu\",\n        \"phoneNumber\": [\n            \"0742222134\",\n            \"0721001891\"\n        ],\n        \"email\": \"mihai.ionescu@email.com\",\n        \"cars\": [\n            {\n                \"_id\": \"6800eb7b890a8ea37a4169f1\",\n                \"licensePlate\": \"B111AYZ\",\n                \"chassisNumber\": \"AAB12345678900000\",\n                \"brand\": \"Dacia\",\n                \"model\": \"Duster\",\n                \"year\": 2019,\n                \"engineType\": \"diesel\",\n                \"engineCapacity\": 1995,\n                \"horsepower\": 190,\n                \"powerKW\": 140,\n                \"createdAt\": \"2025-04-17T11:52:27.736Z\",\n                \"updatedAt\": \"2025-04-17T11:52:27.736Z\",\n                \"__v\": 0\n            }\n        ],\n        \"createdAt\": \"2025-04-17T11:52:27.745Z\",\n        \"updatedAt\": \"2025-04-17T11:52:27.745Z\",\n        \"__v\": 0\n    },\n    {\n        \"isActive\": true,\n        \"_id\": \"6800ed920875937d8f957f0c\",\n        \"firstName\": \"Maria\",\n        \"lastName\": \"Mircea\",\n        \"phoneNumber\": [\n            \"0742222144\",\n            \"0721001999\"\n        ],\n        \"email\": \"maria.mircea1@email.com\",\n        \"cars\": [\n            {\n                \"_id\": \"6800ed920875937d8f957f0a\",\n                \"licensePlate\": \"AG23AAA\",\n                \"chassisNumber\": \"BCB12345679912000\",\n                \"brand\": \"Audi\",\n                \"model\": \"Q6\",\n                \"year\": 2020,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1995,\n                \"horsepower\": 190,\n                \"powerKW\": 140,\n                \"createdAt\": \"2025-04-17T12:01:22.245Z\",\n                \"updatedAt\": \"2025-04-17T12:01:22.245Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68010dbb921bff286b12cf18\",\n                \"licensePlate\": \"DJ04COR\",\n                \"chassisNumber\": \"CAUZYZ8K9DA123456\",\n                \"brand\": \"Audi\",\n                \"model\": \"A4\",\n                \"year\": 2018,\n                \"engineType\": \"diesel\",\n                \"engineCapacity\": 1968,\n                \"horsepower\": 143,\n                \"powerKW\": 105,\n                \"createdAt\": \"2025-04-17T14:18:35.431Z\",\n                \"updatedAt\": \"2025-04-17T14:18:35.431Z\",\n                \"__v\": 0\n            }\n        ],\n        \"createdAt\": \"2025-04-17T12:01:22.253Z\",\n        \"updatedAt\": \"2025-04-17T14:18:35.440Z\",\n        \"__v\": 1\n    },\n    {\n        \"_id\": \"68011295921bff286b12cf1e\",\n        \"firstName\": \"Alexandru\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0752222144\"\n        ],\n        \"email\": \"alex.ionescu11@email.com\",\n        \"cars\": [\n            {\n                \"_id\": \"68011295921bff286b12cf1c\",\n                \"licensePlate\": \"AG10ALX\",\n                \"chassisNumber\": \"PPP23345679912323\",\n                \"brand\": \"Audi\",\n                \"model\": \"A4\",\n                \"year\": 2014,\n                \"engineType\": \"diesel\",\n                \"engineCapacity\": 1995,\n                \"horsepower\": 190,\n                \"powerKW\": 140,\n                \"createdAt\": \"2025-04-17T14:39:17.713Z\",\n                \"updatedAt\": \"2025-04-17T14:39:17.713Z\",\n                \"__v\": 0\n            }\n        ],\n        \"createdAt\": \"2025-04-17T14:39:17.716Z\",\n        \"updatedAt\": \"2025-04-17T14:44:39.312Z\",\n        \"__v\": 0,\n        \"isActive\": true\n    },\n    {\n        \"_id\": \"68093d7c29213b9bb7d38bed\",\n        \"firstName\": \"Nicoleta\",\n        \"lastName\": \"Dinca\",\n        \"phoneNumber\": [\n            \"0722345688\"\n        ],\n        \"email\": \"nicoleta.dinca@gmail.com\",\n        \"cars\": [\n            {\n                \"_id\": \"68093d7c29213b9bb7d38be9\",\n                \"licensePlate\": \"B123XXX\",\n                \"chassisNumber\": \"NNN12345678901234\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Corolla\",\n                \"year\": 2018,\n                \"engineType\": \"petrol\",\n                \"engineCapacity\": 1800,\n                \"horsepower\": 120,\n                \"powerKW\": 88,\n                \"createdAt\": \"2025-04-23T19:20:28.670Z\",\n                \"updatedAt\": \"2025-04-23T19:20:28.670Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"68093d7c29213b9bb7d38bea\",\n                \"licensePlate\": \"CJ99ACC\",\n                \"chassisNumber\": \"ZZZ98765432109777\",\n                \"brand\": \"Volkswagen\",\n                \"model\": \"Golf\",\n                \"year\": 2015,\n                \"engineType\": \"diesel\",\n                \"engineCapacity\": 1800,\n                \"horsepower\": 115,\n                \"powerKW\": 85,\n                \"createdAt\": \"2025-04-23T19:20:28.671Z\",\n                \"updatedAt\": \"2025-04-23T19:20:28.671Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-04-23T19:20:28.700Z\",\n        \"updatedAt\": \"2025-04-23T19:20:28.700Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"680a28f272acc0a8428b6b4d\",\n        \"firstName\": \"Matei\",\n        \"lastName\": \"Dinca\",\n        \"phoneNumber\": [\n            \"0723368898\",\n            \"0732109879\"\n        ],\n        \"email\": \"matei.dinca@gmail.com\",\n        \"cars\": [\n            {\n                \"_id\": \"680a28f272acc0a8428b6b4b\",\n                \"licensePlate\": \"B123XYX\",\n                \"chassisNumber\": \"PNN12345678901234\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Corolla\",\n                \"year\": 2019,\n                \"engineType\": \"petrol\",\n                \"engineCapacity\": 1800,\n                \"horsepower\": 120,\n                \"powerKW\": 88,\n                \"createdAt\": \"2025-04-24T12:05:06.025Z\",\n                \"updatedAt\": \"2025-04-24T12:05:06.025Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"680a2fe144989a9761882a81\",\n                \"licensePlate\": \"B100XYZ\",\n                \"chassisNumber\": \"WBB12345678900001\",\n                \"brand\": \"Audi\",\n                \"model\": \"A6\",\n                \"year\": 2019,\n                \"engineType\": \"electric\",\n                \"engineCapacity\": 1984,\n                \"horsepower\": 190,\n                \"powerKW\": 140,\n                \"createdAt\": \"2025-04-24T12:34:41.412Z\",\n                \"updatedAt\": \"2025-04-24T12:34:41.412Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"680a2fe144989a9761882a82\",\n                \"licensePlate\": \"bc91ZBC\",\n                \"chassisNumber\": \"WWW12345678900002\",\n                \"brand\": \"Mercedes\",\n                \"model\": \"C-Class\",\n                \"year\": 2021,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 2143,\n                \"horsepower\": 204,\n                \"powerKW\": 150,\n                \"createdAt\": \"2025-04-24T12:34:41.412Z\",\n                \"updatedAt\": \"2025-04-24T12:34:41.412Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-04-24T12:05:06.032Z\",\n        \"updatedAt\": \"2025-04-24T12:42:56.196Z\",\n        \"__v\": 1\n    },\n    {\n        \"_id\": \"681d0e71e3f43a9afd30c34d\",\n        \"firstName\": \"Andrei\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0721234777\"\n        ],\n        \"email\": \"andrei.popescu@gmail.com\",\n        \"cars\": [\n            {\n                \"_id\": \"681d0e71e3f43a9afd30c349\",\n                \"licensePlate\": \"B123ZZZ\",\n                \"chassisNumber\": \"ZZC1234567991SYZ1\",\n                \"brand\": \"Volkswagen\",\n                \"model\": \"Golf\",\n                \"year\": 2019,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1968,\n                \"horsepower\": 150,\n                \"powerKW\": 110,\n                \"createdAt\": \"2025-05-08T20:05:05.936Z\",\n                \"updatedAt\": \"2025-05-08T20:05:05.936Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"681d0e71e3f43a9afd30c34a\",\n                \"licensePlate\": \"AG77POP\",\n                \"chassisNumber\": \"PPP4667890123ABC2\",\n                \"brand\": \"BMW\",\n                \"model\": \"320i\",\n                \"year\": 2020,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1998,\n                \"horsepower\": 184,\n                \"powerKW\": 135,\n                \"createdAt\": \"2025-05-08T20:05:05.937Z\",\n                \"updatedAt\": \"2025-05-08T20:05:05.937Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-05-08T20:05:05.955Z\",\n        \"updatedAt\": \"2025-05-08T20:05:05.955Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681d1013e3f43a9afd30c363\",\n        \"firstName\": \"Andreea\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0731234777\"\n        ],\n        \"email\": \"andreea.popescu@gmail.com\",\n        \"cars\": [\n            {\n                \"_id\": \"681d1013e3f43a9afd30c35f\",\n                \"licensePlate\": \"B124ZZZ\",\n                \"chassisNumber\": \"AZC1234567991SYZ1\",\n                \"brand\": \"Volkswagen\",\n                \"model\": \"Golf\",\n                \"year\": 2019,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1968,\n                \"horsepower\": 150,\n                \"powerKW\": 110,\n                \"createdAt\": \"2025-05-08T20:12:03.754Z\",\n                \"updatedAt\": \"2025-05-08T20:12:03.754Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"681d1013e3f43a9afd30c360\",\n                \"licensePlate\": \"AG97POP\",\n                \"chassisNumber\": \"PZP4667890123ABC2\",\n                \"brand\": \"BMW\",\n                \"model\": \"320i\",\n                \"year\": 2020,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1998,\n                \"horsepower\": 184,\n                \"powerKW\": 135,\n                \"createdAt\": \"2025-05-08T20:12:03.755Z\",\n                \"updatedAt\": \"2025-05-08T20:12:03.755Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-05-08T20:12:03.758Z\",\n        \"updatedAt\": \"2025-05-08T20:12:03.758Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681d108fe3f43a9afd30c36c\",\n        \"firstName\": \"Ana\",\n        \"lastName\": \"Ionescu\",\n        \"phoneNumber\": [\n            \"0731234777\"\n        ],\n        \"email\": \"ana.ionescu@gmail.com\",\n        \"cars\": [\n            {\n                \"_id\": \"681d108fe3f43a9afd30c368\",\n                \"licensePlate\": \"B100AZZ\",\n                \"chassisNumber\": \"ACC1234567991SYZ1\",\n                \"brand\": \"DACIA\",\n                \"model\": \"Duster\",\n                \"year\": 2023,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1968,\n                \"horsepower\": 150,\n                \"powerKW\": 110,\n                \"createdAt\": \"2025-05-08T20:14:07.283Z\",\n                \"updatedAt\": \"2025-05-08T20:14:07.283Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"681d108fe3f43a9afd30c369\",\n                \"licensePlate\": \"AG97AOP\",\n                \"chassisNumber\": \"PZP9067890123ABC2\",\n                \"brand\": \"BMW\",\n                \"model\": \"X5\",\n                \"year\": 2020,\n                \"engineType\": \"hybrid\",\n                \"engineCapacity\": 1998,\n                \"horsepower\": 184,\n                \"powerKW\": 135,\n                \"createdAt\": \"2025-05-08T20:14:07.283Z\",\n                \"updatedAt\": \"2025-05-08T20:14:07.283Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-05-08T20:14:07.287Z\",\n        \"updatedAt\": \"2025-05-08T20:14:07.287Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Edit Client by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Andrei\",\r\n  \"lastName\": \"Popescu\",\r\n  \"phoneNumber\": [\"0712345670\",\"0712345671\"],\r\n  \"email\": \"andrei.popescu21@gamil.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/update-client/681d0e71e3f43a9afd30c34d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-client",
+						"681d0e71e3f43a9afd30c34d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Andrei\",\r\n  \"lastName\": \"Popescu\",\r\n  \"phoneNumber\": [\"0712345670\",\"0712345671\"],\r\n  \"email\": \"andrei.popescu21@gamil.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/update-client/681d0e71e3f43a9afd30c34d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update-client",
+								"681d0e71e3f43a9afd30c34d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "371"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"173-fFAmwGmwhDbjtEHYNY/HENTejRE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:19:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Client updated successfully\",\n    \"client\": {\n        \"_id\": \"681d0e71e3f43a9afd30c34d\",\n        \"firstName\": \"Andrei\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0712345670\",\n            \"0712345671\"\n        ],\n        \"email\": \"andrei.popescu21@gamil.com\",\n        \"cars\": [\n            \"681d0e71e3f43a9afd30c349\",\n            \"681d0e71e3f43a9afd30c34a\"\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-05-08T20:05:05.955Z\",\n        \"updatedAt\": \"2025-05-08T20:19:18.875Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add cars to client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B229HYZ\",\r\n      \"chassisNumber\": \"ABC32145678901234\",\r\n      \"brand\": \"Audi\",\r\n      \"model\": \"A10\",\r\n      \"year\": 2018,\r\n      \"engineType\": \"electric\",\r\n      \"engineCapacity\": 1600,\r\n      \"horsepower\": 90\r\n    },\r\n    {\r\n      \"licensePlate\": \"B456VBC\",\r\n      \"chassisNumber\": \"TEF98765432109876\",\r\n      \"brand\": \"Volkswagen\",\r\n      \"model\": \"Golf\",\r\n      \"year\": 2015,\r\n      \"engineType\": \"diesel\",\r\n      \"engineCapacity\": 2000,\r\n      \"horsepower\": 140\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/add-cars-to-client/681d0e71e3f43a9afd30c34d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-cars-to-client",
+						"681d0e71e3f43a9afd30c34d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cars\": [\r\n    {\r\n      \"licensePlate\": \"B229HYZ\",\r\n      \"chassisNumber\": \"ABC32145678901234\",\r\n      \"brand\": \"Audi\",\r\n      \"model\": \"A10\",\r\n      \"year\": 2018,\r\n      \"engineType\": \"electric\",\r\n      \"engineCapacity\": 1600,\r\n      \"horsepower\": 90\r\n    },\r\n    {\r\n      \"licensePlate\": \"B456VBC\",\r\n      \"chassisNumber\": \"TEF98765432109876\",\r\n      \"brand\": \"Volkswagen\",\r\n      \"model\": \"Golf\",\r\n      \"year\": 2015,\r\n      \"engineType\": \"diesel\",\r\n      \"engineCapacity\": 2000,\r\n      \"horsepower\": 140\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/add-cars-to-client/681d0e71e3f43a9afd30c34d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add-cars-to-client",
+								"681d0e71e3f43a9afd30c34d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1af-zMBNYo/Q0CwH6EGePFWZjX8msks\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:25:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Successfully added cars to client\",\n    \"client\": {\n        \"_id\": \"681d0e71e3f43a9afd30c34d\",\n        \"firstName\": \"Andrei\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0712345670\",\n            \"0712345671\"\n        ],\n        \"email\": \"andrei.popescu21@gamil.com\",\n        \"cars\": [\n            \"681d0e71e3f43a9afd30c349\",\n            \"681d0e71e3f43a9afd30c34a\",\n            \"681d131f1955cfb1063af537\",\n            \"681d131f1955cfb1063af538\"\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-05-08T20:05:05.955Z\",\n        \"updatedAt\": \"2025-05-08T20:25:03.409Z\",\n        \"__v\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"isActive\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/is-active/681d0e71e3f43a9afd30c34d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"is-active",
+						"681d0e71e3f43a9afd30c34d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isActive\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/is-active/681d0e71e3f43a9afd30c34d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"is-active",
+								"681d0e71e3f43a9afd30c34d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "430"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ae-TJ2D63RoGS0Mn4y41c9YFLrBcPc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:25:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Client deactivated successfully\",\n    \"client\": {\n        \"_id\": \"681d0e71e3f43a9afd30c34d\",\n        \"firstName\": \"Andrei\",\n        \"lastName\": \"Popescu\",\n        \"phoneNumber\": [\n            \"0712345670\",\n            \"0712345671\"\n        ],\n        \"email\": \"andrei.popescu21@gamil.com\",\n        \"cars\": [\n            \"681d0e71e3f43a9afd30c349\",\n            \"681d0e71e3f43a9afd30c34a\",\n            \"681d131f1955cfb1063af537\",\n            \"681d131f1955cfb1063af538\"\n        ],\n        \"isActive\": false,\n        \"createdAt\": \"2025-05-08T20:05:05.955Z\",\n        \"updatedAt\": \"2025-05-08T20:25:58.682Z\",\n        \"__v\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get client by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/client-by-id/681d0e71e3f43a9afd30c34d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"client-by-id",
+						"681d0e71e3f43a9afd30c34d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/client-by-id/681d0e71e3f43a9afd30c34d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"client-by-id",
+								"681d0e71e3f43a9afd30c34d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1473"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c1-S6VBg7Cdd9LOD18yg0hQrR4aAQQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:26:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"681d0e71e3f43a9afd30c34d\",\n    \"firstName\": \"Andrei\",\n    \"lastName\": \"Popescu\",\n    \"phoneNumber\": [\n        \"0712345670\",\n        \"0712345671\"\n    ],\n    \"email\": \"andrei.popescu21@gamil.com\",\n    \"cars\": [\n        {\n            \"_id\": \"681d0e71e3f43a9afd30c349\",\n            \"licensePlate\": \"B123ZZZ\",\n            \"chassisNumber\": \"ZZC1234567991SYZ1\",\n            \"brand\": \"Volkswagen\",\n            \"model\": \"Golf\",\n            \"year\": 2019,\n            \"engineType\": \"hybrid\",\n            \"engineCapacity\": 1968,\n            \"horsepower\": 150,\n            \"powerKW\": 110,\n            \"createdAt\": \"2025-05-08T20:05:05.936Z\",\n            \"updatedAt\": \"2025-05-08T20:05:05.936Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"681d0e71e3f43a9afd30c34a\",\n            \"licensePlate\": \"AG77POP\",\n            \"chassisNumber\": \"PPP4667890123ABC2\",\n            \"brand\": \"BMW\",\n            \"model\": \"320i\",\n            \"year\": 2020,\n            \"engineType\": \"hybrid\",\n            \"engineCapacity\": 1998,\n            \"horsepower\": 184,\n            \"powerKW\": 135,\n            \"createdAt\": \"2025-05-08T20:05:05.937Z\",\n            \"updatedAt\": \"2025-05-08T20:05:05.937Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"681d131f1955cfb1063af537\",\n            \"licensePlate\": \"B229HYZ\",\n            \"chassisNumber\": \"ABC32145678901234\",\n            \"brand\": \"Audi\",\n            \"model\": \"A10\",\n            \"year\": 2018,\n            \"engineType\": \"electric\",\n            \"engineCapacity\": 1600,\n            \"horsepower\": 90,\n            \"powerKW\": 66,\n            \"createdAt\": \"2025-05-08T20:25:03.396Z\",\n            \"updatedAt\": \"2025-05-08T20:25:03.396Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"681d131f1955cfb1063af538\",\n            \"licensePlate\": \"B456VBC\",\n            \"chassisNumber\": \"TEF98765432109876\",\n            \"brand\": \"Volkswagen\",\n            \"model\": \"Golf\",\n            \"year\": 2015,\n            \"engineType\": \"diesel\",\n            \"engineCapacity\": 2000,\n            \"horsepower\": 140,\n            \"powerKW\": 103,\n            \"createdAt\": \"2025-05-08T20:25:03.398Z\",\n            \"updatedAt\": \"2025-05-08T20:25:03.398Z\",\n            \"__v\": 0\n        }\n    ],\n    \"isActive\": false,\n    \"createdAt\": \"2025-05-08T20:05:05.955Z\",\n    \"updatedAt\": \"2025-05-08T20:25:58.682Z\",\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clientId\": \"68093d7c29213b9bb7d38bed\",\r\n  \"licensePlate\": \"B123XXX\",\r\n  \"contactMethod\": \"email\",\r\n  \"action\": \"Schimb ulei\",\r\n  \"preferredDate\": \"10.05.2025 10:30\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientId\": \"68093d7c29213b9bb7d38bed\",\r\n  \"licensePlate\": \"B123XXX\",\r\n  \"contactMethod\": \"email\",\r\n  \"action\": \"Schimb ulei\",\r\n  \"preferredDate\": \"10.05.2025 10:30\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/appointment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"appointment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"123-n9QWL5J9zN3gGmD2SQq9bwihbao\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:31:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Appointment created successfully\",\n    \"appointment\": {\n        \"clientId\": \"68093d7c29213b9bb7d38bed\",\n        \"carId\": \"68093d7c29213b9bb7d38be9\",\n        \"licensePlate\": \"B123XXX\",\n        \"contactMethod\": \"email\",\n        \"action\": \"Schimb ulei\",\n        \"preferredDate\": \"2025-05-10T07:30:00.000Z\",\n        \"_id\": \"681d14bb1955cfb1063af54f\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Appointment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"receptionIssues\": \"Zgomot la motor și lumină check engine aprinsă\",\r\n  \"carRepairs\": \"Schimb bujii, diagnoză motor\",\r\n  \"repairDuration\": 60\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/update-appointment/681d14bb1955cfb1063af54f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-appointment",
+						"681d14bb1955cfb1063af54f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"receptionIssues\": \"Zgomot la motor și lumină check engine aprinsă\",\r\n  \"carRepairs\": \"Schimb bujii, diagnoză motor\",\r\n  \"repairDuration\": 60\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/update-appointment/681d14bb1955cfb1063af54f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update-appointment",
+								"681d14bb1955cfb1063af54f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "451"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c3-vIP4M9uBR+ME/obrbaCFEsVnyAQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:33:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Appointment updated successfully with reparations details\",\n    \"appointment\": {\n        \"_id\": \"681d14bb1955cfb1063af54f\",\n        \"clientId\": \"68093d7c29213b9bb7d38bed\",\n        \"carId\": \"68093d7c29213b9bb7d38be9\",\n        \"licensePlate\": \"B123XXX\",\n        \"contactMethod\": \"email\",\n        \"action\": \"Schimb ulei\",\n        \"preferredDate\": \"2025-05-10T07:30:00.000Z\",\n        \"__v\": 0,\n        \"receptionIssues\": \"Zgomot la motor și lumină check engine aprinsă\",\n        \"carRepairs\": \"Schimb bujii, diagnoză motor\",\n        \"repairDuration\": 60\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get appointment by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointment-by-id/681d14bb1955cfb1063af54f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointment-by-id",
+						"681d14bb1955cfb1063af54f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/appointment-by-id/681d14bb1955cfb1063af54f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"appointment-by-id",
+								"681d14bb1955cfb1063af54f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "644"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"284-jKYyJjzT5e6DAbOoBBwSShk6NXI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:33:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"681d14bb1955cfb1063af54f\",\n    \"clientId\": {\n        \"_id\": \"68093d7c29213b9bb7d38bed\",\n        \"firstName\": \"Nicoleta\",\n        \"lastName\": \"Dinca\",\n        \"phoneNumber\": [\n            \"0722345688\"\n        ],\n        \"email\": \"nicoleta.dinca@gmail.com\",\n        \"cars\": [\n            \"68093d7c29213b9bb7d38be9\",\n            \"68093d7c29213b9bb7d38bea\"\n        ],\n        \"isActive\": true,\n        \"createdAt\": \"2025-04-23T19:20:28.700Z\",\n        \"updatedAt\": \"2025-04-23T19:20:28.700Z\",\n        \"__v\": 0\n    },\n    \"carId\": \"68093d7c29213b9bb7d38be9\",\n    \"licensePlate\": \"B123XXX\",\n    \"contactMethod\": \"email\",\n    \"action\": \"Schimb ulei\",\n    \"preferredDate\": \"2025-05-10T07:30:00.000Z\",\n    \"__v\": 0,\n    \"carRepairs\": \"Schimb bujii, diagnoză motor\",\n    \"receptionIssues\": \"Zgomot la motor și lumină check engine aprinsă\",\n    \"repairDuration\": 60\n}"
+				}
+			]
+		},
+		{
+			"name": "Get appointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/appointments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"appointments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1159"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"487-IzPFV9xNJW2wIXooXm5VxcPCFAo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 20:34:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68012087b70e5f8f1dc77a71\",\n        \"clientId\": \"68011295921bff286b12cf1e\",\n        \"carId\": \"68011295921bff286b12cf1c\",\n        \"licensePlate\": \"AG10ALX\",\n        \"contactMethod\": \"email\",\n        \"preferredDate\": \"2025-12-04T22:00:00.000Z\",\n        \"message\": \"Verificare\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6801279208017e302a5793e6\",\n        \"clientId\": \"68011295921bff286b12cf1e\",\n        \"carId\": \"68011295921bff286b12cf1c\",\n        \"licensePlate\": \"AG10ALX\",\n        \"contactMethod\": \"email\",\n        \"action\": \"Change oil\",\n        \"preferredDate\": \"2025-05-17T07:30:00.000Z\",\n        \"__v\": 0,\n        \"carRepairs\": \"Check oil filter\",\n        \"receptionIssues\": \"Motor sounds weird when cold\",\n        \"repairDuration\": 50\n    },\n    {\n        \"_id\": \"680a1d9f8dfdc716dc6d4799\",\n        \"clientId\": \"6800ed920875937d8f957f0c\",\n        \"carId\": \"6800ed920875937d8f957f0a\",\n        \"licensePlate\": \"AG23AAA\",\n        \"contactMethod\": \"email\",\n        \"action\": \"Oil Change\",\n        \"preferredDate\": \"2025-05-12T09:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"681d14bb1955cfb1063af54f\",\n        \"clientId\": \"68093d7c29213b9bb7d38bed\",\n        \"carId\": \"68093d7c29213b9bb7d38be9\",\n        \"licensePlate\": \"B123XXX\",\n        \"contactMethod\": \"email\",\n        \"action\": \"Schimb ulei\",\n        \"preferredDate\": \"2025-05-10T07:30:00.000Z\",\n        \"__v\": 0,\n        \"carRepairs\": \"Schimb bujii, diagnoză motor\",\n        \"receptionIssues\": \"Zgomot la motor și lumină check engine aprinsă\",\n        \"repairDuration\": 60\n    }\n]"
+				}
+			]
+		}
+	]
+}
